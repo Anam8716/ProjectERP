@@ -1,0 +1,37 @@
+const express = require('express');
+const path = require('path');
+const cors = require('cors');
+
+const app = express();
+
+// Port Number
+const port = 3000;
+
+// Host
+const host = "0.0.0.0";
+
+// CORS Middleware
+//app.use(cors());
+const corsOptions = {
+    origin: '*',
+    credentials: true,
+}
+app.use(cors(corsOptions));
+
+// Set Static Folder
+app.use(express.static(path.join(__dirname,'public')));
+
+//Index Route
+app.get('/',(req,res) => {
+    res.send('Invalid Response');
+})
+
+// Start server
+app.listen(port ,host ,()=>{
+    console.log('Server Started on port '+port);
+});
+
+
+
+    "cors": "*",
+    "express": "*"

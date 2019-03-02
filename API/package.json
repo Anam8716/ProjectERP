@@ -1,0 +1,24 @@
+{
+  "name": "Api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {},
+  "keywords": [
+    "api",
+    "blog",
+    "Technical Blog"
+  ],
+  "author": "Neetesh Kuchya",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "jsonwebtoken": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "body-parser": "^1.18.3",
+    "cors": "*",
+    "express": "*",
+    "mongoose": "^5.4.7"
+  }
+}
